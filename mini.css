@@ -1,0 +1,36 @@
+.obshiy{
+    width: 100%;
+    height: 100%;
+}
+.block{
+    border: 1px solid White;
+    width: 18%;
+    height: 100%;
+}
+.molotok{
+    display: inline-block;
+}
+.molotok>img{
+    width: 100%;
+    height: 40%;
+}
+input>button{
+    left: 20px;
+}
+.ipapi{
+    position: relative;
+    border: 1px solid black;
+    border-radius: 10px;
+    background: rgb(229, 229, 229);
+    width: 90%;
+    height: 50%;
+    top: 50px;
+}
+.ipapi>img{
+    position: absolute;
+    width: 62%;
+    height: 40%;
+    left: 50%;
+    top: 10%;
+    transform: translate(-50%, -10%);
+}
