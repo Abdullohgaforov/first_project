@@ -1,0 +1,23 @@
+.YES:checked + label {
+    color: green;
+}
+.NO:checked + label {
+    color: darkred;
+}
+
+input[type="radio"]:checked {
+    box-shadow: 0 0 0 3px orange;
+}
+
+.Ch-m:checked {
+    box-shadow: 0 3px hotpink;
+}
+
+.vg{
+    color: white;
+}
+.Ch-m:checked + .va + .vg{
+    color: hotpink;
+    box-shadow: 0px 3px 8px 3px hotpink;
+}
+
