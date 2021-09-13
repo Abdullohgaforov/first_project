@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>begin 4</title>
+</head>
+<body>
+
+<input id="d" placeholder="d = " onkeyup="checkValue()">
+<p>P = 3.14</p>
+<p id="l"></p>
+<button onclick="calc()" disabled id="ok">OK</button>
+<button onclick="clear1()" disabled id="btnClr">Clear</button>
+<script>
+    function checkValue() {
+        const ok = document.getElementById("ok")
+        const dElm = document.getElementById("d")
+        if (dElm.value.length > 0) {
+            ok.removeAttribute("disabled")
+        } else {
+            ok.setAttribute("disabled", true)
+        }
+    }
+
+    function calc() {
+        const dElm = document.getElementById("d")
+        const lElm = document.getElementById("l")
+        const btnClr = document.getElementById("btnClr")
+        btnClr.removeAttribute("disabled")
+        const d = parseInt(dElm.value);
+        const p = 3.14;
+        const L = p * d;
+        lElm.innerText = p.toString() + " * " + d.toString() + " = " + (L).toString()
+        console.log(L)
+    }
+
+    function clear1() {
+        const lElm = document.getElementById("l")
+        const dElm = document.getElementById("d")
+        const btnClr = document.getElementById("btnClr")
+        btnClr.setAttribute("disabled", true)
+        dElm.value = ""
+        lElm.innerText = ""
+    }
+
+</script>
+</body>
+</html>
